@@ -74,11 +74,12 @@ nav ul li a:hover::after{
 }
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: none;
     flex-wrap: wrap;
 }
 .about-col-1{
     flex-basis: 60%;
+    margin: 0px, 0px;
 }
 .about-col-2{
     flex-basis: 35%;
@@ -134,6 +135,8 @@ nav ul li a:hover::after{
 }
 
 /*---------services----------*/
+
+/*---
 #services{
     padding: 30px 0;
 }
@@ -171,6 +174,7 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform: translateY(-10px)
 }
+------*/
 /*---------portforlio----------*/
 #portfolio{
     padding: 50px 0;    
@@ -310,9 +314,9 @@ form btn2{
     margin-top: 20px;
 }
 /*---------css for small screen----------*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px)(min-width: 0px) {
     #header{
-        background-image: url(images/bg);
+        background-image: url(images/bg.jpg);
         background-image: url(images/user-header.png);
     }
     .header-text{
