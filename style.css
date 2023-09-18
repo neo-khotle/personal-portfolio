@@ -61,6 +61,9 @@ nav ul li a:hover::after{
     margin-top: 0px;
     font-size: 200px;
 }
+.header-text h1 span{
+    display: none;
+}
 .header-text h1 a{
     color:#fff;
     font-family: 'DM Mono', monospace;
@@ -314,18 +317,48 @@ form btn2{
     margin-top: 20px;
 }
 /*---------css for small screen----------*/
+nav .fas{
+    display: none;
+}
+
+
 @media only screen and (max-width: 600px),(min-width: 0px) {
     #header{
-        background-image: url(images/phone-bg.jpg);
+        background-image: url(images/bg.jpg);
     }
     .header-text{
-        margin-top: 100px;
+        margin-top: 100%;
         font-size: 16px;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 50px;
     }
-    .header-text h1 span{
-        font-size: 40px;
+    .header-text h1 a{
+        font-size: 50px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
     }
 }
