@@ -73,6 +73,8 @@ nav ul li a:hover::after{
     font-size:200px; 
     text-decoration: none;
 }
+
+
 /*-------about-------*/
 #about{
     padding:80px 0%;
@@ -320,18 +322,24 @@ form btn2{
     margin-top: 20px;
 }
 /*---------css for small screen----------*/
-nav .fas{
+nav .fa-bars{
     display: none;
 }
-
+nav .fa-xmark{
+    display: none;
+}
+.small_background{
+    display: none;
+}
 
 @media only screen and (max-width: 400px){
     #header{
         background-image: url(images/bg.jpg);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 80%;
         font-size: 16px;
+        text-align: center;
     }
     .header-text h1{
         font-size: 50px;
@@ -339,18 +347,45 @@ nav .fas{
     .header-text h1 a{
         font-size: 50px;
     }
-    nav .fas{
+    /*--
+    .small_background{
+        background-image: url(images/user2.png);
+        display: block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        margin: 0px;
+        position: absolute;
+        margin-top: 0%;
+        margin-right: 10%;
+        margin-left: -10%;
+        z-index: -2;
+    }------*/
+
+    nav .fa-xmark{
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 25px;  
+        padding-top: -10px;
+    }
+    nav .fa-bars{
+        display: block;
+    }
+    nav .fa{
         display: block;
         font-size: 25px;
+        
     }
     nav ul{
         background: #ff004f;
+        background-blend-mode:hue;
         position: absolute;
         top: 0;
         right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
+        width: 150px;
+        height: 50vh;
+        padding-top: 70px;
         z-index: 2;
         transition: right 0.5;
     }
@@ -358,13 +393,19 @@ nav .fas{
         display: block;
         margin: 25px;
     }
-    nav ul .fas{
+    nav ul .fa{
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
-}
+
+    #about{
+        padding:50px 0%;
+        color:#080808;
+    }
+
+
 #msg{
     color: #ff0000;;
     margin-top: -40px;
