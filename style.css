@@ -183,6 +183,7 @@ nav ul li a:hover::after{
     transform: translateY(-10px)
 }
 ------*/
+
 /*---------portforlio----------*/
 #portfolio{
     padding: 50px 0;    
@@ -408,6 +409,7 @@ nav .fa-xmark{
         flex-basis: 100%;
     }
     .about-col-2{
+        margin-top: -10px;
         margin-bottom: 30px; 
     }
     .about-col-1{
@@ -417,9 +419,21 @@ nav .fa-xmark{
         font-size: 16px;
         margin-right: 20px;
     }
-
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .contact-left{
+        margin-top: 70px;
+    }
+    .btn.btn2{
+        margin-top: 20px;
+    }
+    .copyright{
+        font-size: 14px;
+        margin-top: 150px;
+    }
     #msg{
-    color: #ff0000;;
-    margin-top: -40px;
-    display: block;
+        color: #ff0000;;
+        margin-top: -40px;
+        display: block;
     }
